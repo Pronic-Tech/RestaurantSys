@@ -398,6 +398,7 @@ class Item_food extends MX_Controller {
 				$varient = $sheetdata[$i][6];
 				$buying = $sheetdata[$i][7];
 				$price = $sheetdata[$i][8];
+				$quantiy = $sheetdata[$i][9];
 				$newstatus=strtolower($status);
                 if($newstatus=="active"){$acstatus=1;}
                 else{$acstatus=0;}
@@ -457,7 +458,8 @@ class Item_food extends MX_Controller {
             		'menuid'     		=> $foodid,
             	    'variantName'     	=> $varient,
 					'buying'     		=> $buying,
-            	    'price'     		=> $price
+            	    'price'     		=> $price,
+					'quantity'     		=> $quantiy
             	  	);
             		$this->db->insert('variant', $varientData);
     				}
@@ -486,6 +488,7 @@ class Item_food extends MX_Controller {
 			 $sheet->setCellValue('G1', 'Varient Name');
 			 $sheet->setCellValue('H1', 'Buying');
 			 $sheet->setCellValue('I1', 'Price');
+			 $sheet->setCellValue('J1', 'quantity');
 			 $rowCount   =   2;
 				$arrayfood=array (array("category" => "Demo", "parent" => "", "kitchen" => "Italian","item"=>"Dosa","description"=>"food description","status"=>"Active","varient"=>"regular","buying"=>40 ,"price"=>60),array("category" => "Demo1", "parent" => "Demo","kitchen" => "Italian","item"=>"Dosa2","description"=>"food description","status"=>"Active","varient"=>"Small","buying"=>40,"price"=>50));
                 foreach($arrayfood as $row){
@@ -498,6 +501,7 @@ class Item_food extends MX_Controller {
                     $sheet->SetCellValue('G'.$rowCount, $row['varient'],'UTF-8');
 					$sheet->SetCellValue('H'.$rowCount, $row['buying'],'UTF-8');
                     $sheet->SetCellValue('I'.$rowCount, $row['price'],'UTF-8');
+					$sheet->SetCellValue('I'.$rowCount, $row['quantity'],'UTF-8');
                     $rowCount++;
                 }
 			 
@@ -609,6 +613,7 @@ class Item_food extends MX_Controller {
 		$this->form_validation->set_rules('foodid',display('item_name')  ,'required');
 		$this->form_validation->set_rules('buying', display('price')  ,'required');
 		$this->form_validation->set_rules('price', display('price')  ,'required');
+		$this->form_validation->set_rules('quantity', display('price')  ,'required');
 	  $data['intinfo']="";
 	  $data['varient']   = (Object) $postData = [
 	   'variantid'          => $this->input->post('variantid'),
@@ -616,6 +621,7 @@ class Item_food extends MX_Controller {
 	   'variantName' 	 	=> $this->input->post('varientname',true),
 	   'buying' 	 	        => $this->input->post('buying',true),
 	   'price' 	 	        => $this->input->post('price',true),
+	   'quantity' 	 	        => $this->input->post('quantity',true),
 	  ];
 	  if ($this->form_validation->run()) { 
 	   if (empty($this->input->post('variantid'))) {
@@ -1252,7 +1258,7 @@ class Item_food extends MX_Controller {
 		$product_info 	= $this->fooditem_model->findfooditem($food);
 		   $list[''] = '';
 		foreach ($product_info as $value) {
-			$json_product[] = array('label'=>$value['ProductName'].'_'.$value['variantName'],'value'=>$value['ProductsID'],"varientid"=>$value['variantid'],"variantName"=>$value['variantName'],"ProductName"=>$value['ProductName'],"buying"=>$value['buying'],"price"=>$value['price']);
+			$json_product[] = array('label'=>$value['ProductName'].'_'.$value['variantName'],'value'=>$value['ProductsID'],"varientid"=>$value['variantid'],"variantName"=>$value['variantName'],"ProductName"=>$value['ProductName'],"buying"=>$value['buying'],"price"=>$value['price'],"quantity"=>$value['quantity']);
 		} 
         echo json_encode($json_product);
 		}

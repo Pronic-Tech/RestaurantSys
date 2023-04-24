@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="price" class="col-sm-4 col-form-label">Buying Price *</label>
+                            <label for="Buying" class="col-sm-4 col-form-label">Buying Price *</label>
                             <div class="col-sm-8">
                                 <input name="buying" class="form-control" type="text" placeholder="Buying Price" id="price" value=""><a class="cattooltips" data-toggle="tooltip" data-placement="top" title=""><?php echo $currency->curr_icon;?></i></a>
                             </div>
@@ -51,6 +51,12 @@
                             </div>
                         </div>
   
+						<div class="form-group row">
+                            <label for="quantity" class="col-sm-4 col-form-label">Quantity *</label>
+                            <div class="col-sm-8">
+                                <input name="quantity" class="form-control" type="text" placeholder="Quantity" id="quantity" value="">
+                            </div>
+                        </div>
                         <div class="form-group text-right">
                             <button type="reset" class="btn btn-primary w-md m-b-5"><?php echo display('reset') ?></button>
                             <button type="submit" class="btn btn-success w-md m-b-5"><?php echo display('Ad') ?></button>
