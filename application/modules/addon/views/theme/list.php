@@ -18,7 +18,7 @@
                         <div class="row">
                             <?php echo form_open_multipart('addon/theme/upload_new_theme'); ?>
                             <div class="col-sm-3">
-                                <label><?php echo display('purchase_key') ?> <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Enter Envato purchase key or Bdtask purchase key"></span></label>
+                                <label><?php echo display('purchase_key') ?> <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="bottom" title="Enter Envato purchase key or pronic purchase key"></span></label>
                                 <input type="text" name="purchase_key"   placeholder="<?php echo display('purchase_key') ?>" class="form-control" required/>
                             </div>
                             <div class="col-sm-3">

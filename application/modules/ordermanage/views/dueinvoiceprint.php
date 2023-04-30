@@ -181,7 +181,7 @@
 </div>
 <div class="border-top py-1">
     <p class="text-note text-primary text-center mb-0 text-bold"><?php echo display('thanks_you')?></p>
-    <p class="text-note text-primary text-center mb-0"><?php echo display('powerbybdtask')?></p>
+    <p class="text-note text-primary text-center mb-0"><?php echo display('powerbypronic')?></p>
 </div>
 </div>
 

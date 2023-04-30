@@ -31,7 +31,7 @@
             position: new google.maps.LatLng(23.756107, 90.387196), 
             map: map,
             icon: catIcon,
-            title: 'BDTask',
+            title: 'pronic',
             animation: google.maps.Animation.DROP,
         });
     }

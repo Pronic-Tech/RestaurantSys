@@ -51,8 +51,8 @@ class Lic
     private $product_version = '3.0';
     private $log_path    = null;
     private $check_days  = array(9, 10, 11);
-    private $api_domain  = 'secure.bdtask.com';
-    private $api_url     = 'https://secure.bdtask.com/alpha/class.licence.php';
+    private $api_domain  = 'secure.pronic.com';
+    private $api_url     = 'https://secure.pronic.com/alpha/class.licence.php';
     private $whitelist   = '{license_key}';
 
     public function __construct()
@@ -175,7 +175,7 @@ class Lic
                 return false;
             }
 
-            $this->message = "Your application license has expired! <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i>";
+            $this->message = "Your application license has expired! <br>Contact <i><a href='https://pronic.com/#contact' target='_blank' style='color:#f5f5f5'>pronic.com</a></i>";
             if (file_exists($this->log_path)) {
                 if (!$this->fileRead())
                     $this->html($this->product_key);
@@ -189,11 +189,11 @@ class Lic
     {
         if (strtotime($LicSysLog->expire_date) <= @strtotime(date('Y-m-d'))) {
             //call to purchase
-            $this->message = "Your application license has expired on ". @date("M d, Y",@strtotime($LicSysLog->expire_date)) ."! <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i>";
+            $this->message = "Your application license has expired on ". @date("M d, Y",@strtotime($LicSysLog->expire_date)) ."! <br>Contact <i><a href='https://pronic.com/#contact' target='_blank' style='color:#f5f5f5'>pronic.com</a></i>";
             $this->html();
 
         } else if (isset($_SESSION['response']) && $_SESSION['response']) {
-            $this->message = "This copy of application is not genuine <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i>";
+            $this->message = "This copy of application is not genuine <br>Contact <i><a href='https://pronic.com/#contact' target='_blank' style='color:#f5f5f5'>pronic.com</a></i>";
             $this->html();
 
         } else if($this->update_day != $LicSysLog->update_day) {
@@ -205,7 +205,7 @@ class Lic
                 $this->updateFile($data['whitelist'], $data['product_key']);
                 $_SESSION['response'] = false;
             } else {
-                $this->message = "This copy of application is not genuine <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i>";
+                $this->message = "This copy of application is not genuine <br>Contact <i><a href='https://pronic.com/#contact' target='_blank' style='color:#f5f5f5'>pronic.com</a></i>";
                 $this->html();
             }
             $_SESSION['response'] = true;

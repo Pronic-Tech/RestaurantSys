@@ -388,7 +388,7 @@ CREATE TABLE `award` (
 
 INSERT INTO `award` (`award_id`, `award_name`, `aw_description`, `awr_gift_item`, `date`, `employee_id`, `awarded_by`) VALUES ('2', 'PriceMoney', 'sdfasdf', '1000tk', '2017-09-09', 'EVJ77XOI', 'Isahq');
 INSERT INTO `award` (`award_id`, `award_name`, `aw_description`, `awr_gift_item`, `date`, `employee_id`, `awarded_by`) VALUES ('3', 'fdg', 'dfg', 'dfg', '2017-09-08', 'EVJ77XOI', 'dfg');
-INSERT INTO `award` (`award_id`, `award_name`, `aw_description`, `awr_gift_item`, `date`, `employee_id`, `awarded_by`) VALUES ('4', 'Gift', 'fsdf', 'Laptop', '2017-09-10', '4324', 'Bdtask');
+INSERT INTO `award` (`award_id`, `award_name`, `aw_description`, `awr_gift_item`, `date`, `employee_id`, `awarded_by`) VALUES ('4', 'Gift', 'fsdf', 'Laptop', '2017-09-10', '4324', 'pronic');
 
 
 #
@@ -451,7 +451,7 @@ INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `cu
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('12', 'Primary School', '1', 'Test Primary School', 'E4ZNFBIC');
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('13', 'High School Name', '2', 'Taker Hat High school', 'E4ZNFBIC');
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('14', 'Versity Name', '3', 'Nu', 'E4ZNFBIC');
-INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('15', 'Company Name', '1', 'Bdtask', 'ER6RJAY8');
+INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('15', 'Company Name', '1', 'pronic', 'ER6RJAY8');
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('16', 'House Name', '3', 'Shikder Bari', 'ER6RJAY8');
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('17', 'Person name', '2', 'Tuhin', 'ER6RJAY8');
 INSERT INTO `custom_table` (`custom_id`, `custom_field`, `custom_data_type`, `custom_data`, `employee_id`) VALUES ('21', 'customfield1', '1', 'custom value1', 'E0LHJ447');
@@ -1534,7 +1534,7 @@ CREATE TABLE `setting` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-INSERT INTO `setting` (`id`, `title`, `address`, `email`, `phone`, `logo`, `favicon`, `language`, `site_align`, `footer_text`) VALUES ('2', 'Dynamic Admin Panel', '98 Green Road, Farmgate, Dhaka-1215.', 'bdtask@gmail.com', '0123456789', 'assets/img/icons/logo.png', 'assets/img/icons/m.png', 'english', 'LTR', '2017Â©Copyright');
+INSERT INTO `setting` (`id`, `title`, `address`, `email`, `phone`, `logo`, `favicon`, `language`, `site_align`, `footer_text`) VALUES ('2', 'Dynamic Admin Panel', '98 Green Road, Farmgate, Dhaka-1215.', 'pronic@gmail.com', '0123456789', 'assets/img/icons/logo.png', 'assets/img/icons/m.png', 'english', 'LTR', '2017Â©Copyright');
 
 
 #
@@ -1592,7 +1592,7 @@ CREATE TABLE `synchronizer_setting` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
-INSERT INTO `synchronizer_setting` (`id`, `hostname`, `username`, `password`, `port`, `debug`, `project_root`) VALUES ('8', '70.35.198.244', 'softest3bdtask', 'Ux5O~MBJ#odK', '21', 'true', './public_html/');
+INSERT INTO `synchronizer_setting` (`id`, `hostname`, `username`, `password`, `port`, `debug`, `project_root`) VALUES ('8', '70.35.198.244', 'softest3pronic', 'Ux5O~MBJ#odK', '21', 'true', './public_html/');
 
 
 #

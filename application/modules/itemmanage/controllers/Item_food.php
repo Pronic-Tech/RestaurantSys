@@ -490,7 +490,7 @@ class Item_food extends MX_Controller {
 			 $sheet->setCellValue('I1', 'Price');
 			 $sheet->setCellValue('J1', 'quantity');
 			 $rowCount   =   2;
-				$arrayfood=array (array("category" => "Demo", "parent" => "", "kitchen" => "Italian","item"=>"Dosa","description"=>"food description","status"=>"Active","varient"=>"regular","buying"=>40 ,"price"=>60),array("category" => "Demo1", "parent" => "Demo","kitchen" => "Italian","item"=>"Dosa2","description"=>"food description","status"=>"Active","varient"=>"Small","buying"=>40,"price"=>50));
+				$arrayfood=array (array("category" => "Demo", "parent" => "", "kitchen" => "Italian","item"=>"Dosa","description"=>"food description","status"=>"Active","varient"=>"regular","buying"=>40 ,"price"=>60 ,"quantity"=>21),array("category" => "Demo1", "parent" => "Demo","kitchen" => "Italian","item"=>"Dosa2","description"=>"food description","status"=>"Active","varient"=>"Small","buying"=>40,"price"=>50,"quantity"=>21));
                 foreach($arrayfood as $row){
                     $sheet->SetCellValue('A'.$rowCount, $row['category'],'UTF-8');
 					$sheet->SetCellValue('B'.$rowCount, $row['parent'],'UTF-8');

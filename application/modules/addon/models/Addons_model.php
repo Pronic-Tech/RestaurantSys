@@ -3,7 +3,7 @@
 class Addons_model extends CI_Model {
 
 	private $product_key = '23525997';
-	private $api_url = "https://store.bdtask.com/api/products";
+	private $api_url = "https://store.pronic.com/api/products";
     private $access_key = "3b32166232ca4e50bcde73a98ec6a96c25d59567";
     private $header;
 	
