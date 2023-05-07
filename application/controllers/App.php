@@ -2591,7 +2591,7 @@ class App extends MY_Controller {
 			$output['orderinfo'][$o]['billby']=$cashierinfo->firstname.' '.$cashierinfo->lastname;
 			$output['orderinfo'][$o]['currency']=$currencyinfo->curr_icon;
 			$output['orderinfo'][$o]['thankyou']=display('thanks_you');
-			$output['orderinfo'][$o]['powerby']=display('powerbypronic');
+			$output['orderinfo'][$o]['powerby']=display('powerbybhojon');
 		 $o++;
 		}
 		return $this->respondWithSuccess('Printing information.', $output);
@@ -2791,7 +2791,7 @@ class App extends MY_Controller {
 	public function checkpurchasekey(){
 		$curl = curl_init();
 		curl_setopt_array($curl, array(
-		  CURLOPT_URL => 'https://store.pronic.com/class.api.php?domain='.$domain.'&product_key='.$producrtkey.'&purchase_key='.$purchasekey.'',
+		  CURLOPT_URL => 'https://store.bhojon.com/class.api.php?domain='.$domain.'&product_key='.$producrtkey.'&purchase_key='.$purchasekey.'',
 		  CURLOPT_RETURNTRANSFER => true,
 		  CURLOPT_ENCODING => '',
 		  CURLOPT_MAXREDIRS => 10,

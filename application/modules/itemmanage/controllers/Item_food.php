@@ -186,7 +186,6 @@ class Item_food extends MX_Controller {
 	   'descrip'                => $this->input->post('descrip',true),
 	   'kitchenid'              =>  $this->input->post('kitchen'),
 	   'cookedtime'             => $this->input->post('cookedtime',true),
-	   'buying'              	=>  $this->input->post('buying'),
 	   'productvat'             => $myvat,
 	   'OffersRate'             => $OffersRate,
 	   'special'       			=> $special,

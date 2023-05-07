@@ -680,7 +680,7 @@ CREATE TABLE `candidate_workexperience` (
 --
 
 INSERT INTO `candidate_workexperience` (`can_workexp_id`, `can_id`, `company_name`, `working_period`, `duties`, `supervisor`, `sequencee`) VALUES
-(1, '16304688503269L', 'pronic', '2', 'df', 'fd', '');
+(1, '16304688503269L', 'bhojon', '2', 'df', 'fd', '');
 
 -- --------------------------------------------------------
 
@@ -723,7 +723,7 @@ CREATE TABLE `common_setting` (
 --
 
 INSERT INTO `common_setting` (`id`, `address`, `email`, `phone`, `phone_optional`, `logo`, `logo_footer`, `ismembership`, `powerbytxt`, `web_onoff`, `backgroundcolorweb`, `webheaderfontcolor`, `backgroundcolorqr`, `qrheaderfontcolor`) VALUES
-(1, '<p>Tom mboya street,</p>\r\n<p>Meru, Town</p>', 'info@pronic.co.ke', '0720287104', '+254 720287104', 'assets/img/2023-02-21/B2.png', 'assets/img/2023-02-21/B3.png', 0, '© 2023 Ke All Right Reserved. Developed by PRONIC.\r\n', 0, NULL, NULL, NULL, NULL);
+(1, '<p>Tom mboya street,</p>\r\n<p>Meru, Town</p>', 'info@bhojon.co.ke', '0720287104', '+254 720287104', 'assets/img/2023-02-21/B2.png', 'assets/img/2023-02-21/B3.png', 0, '© 2023 Ke All Right Reserved. Developed by bhojon.\r\n', 0, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1530,7 +1530,7 @@ INSERT INTO `language` (`id`, `phrase`, `english`) VALUES
 (148, 'designation', 'Designation'),
 (149, 'test', 'Test'),
 (150, 'sl', 'SL'),
-(151, 'pronic', 'pronic'),
+(151, 'bhojon', 'bhojon'),
 (152, 'practice', 'Practice'),
 (153, 'branch_name', 'Branch Name'),
 (154, 'chairman_name', 'Chairman'),
@@ -2503,7 +2503,7 @@ INSERT INTO `language` (`id`, `phrase`, `english`) VALUES
 (1200, 'customer_paid_amount', 'Customer Paid Amount'),
 (1201, 'change_due', 'Change Due'),
 (1202, 'total_due', 'Total Due'),
-(1203, 'powerbypronic', 'Powered  By: pronic, www.pronic.com'),
+(1203, 'powerbybhojon', 'Powered  By: bhojon, www.bhojon.com'),
 (1204, 'recept', 'Receipt  No'),
 (1205, 'orderno', 'Order No.'),
 (1206, 'ref_page', 'Refresh Page'),
@@ -4012,7 +4012,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id`, `title`, `storename`, `address`, `email`, `phone`, `logo`, `logoweb`, `favicon`, `opentime`, `closetime`, `vat`, `isvatnumshow`, `vattinno`, `discount_type`, `discountrate`, `servicecharge`, `service_chargeType`, `currency`, `min_prepare_time`, `language`, `timezone`, `dateformat`, `site_align`, `kitchenrefreshtime`, `powerbytxt`, `footer_text`, `reservation_open`, `reservation_close`, `maxreserveperson`, `printtype`) VALUES
-(2, 'Pronic Restaurant', 'Pronic Restaurant', 'Tom mboya street, Meru', 'info@pronic.co.ke', '0720287104', 'assets/img/icons/2023-02-21/l.png', NULL, 'assets/img/icons/2023-02-21/A.png', '9:00AM', '10:00PM', '0.00', NULL, '23457586', 0, '5.000', '20', 0, 2, '1:00 Hour', 'english', 'Africa/Nairobi', 'd/m/Y', 'LTR', 3, 'Powered By: pronic, www.pronic.com\r\n', '2023 Pronic©Copyright', '09:00:00', '22:00:00', 20, 2);
+(2, 'bhojon Restaurant', 'bhojon Restaurant', 'Tom mboya street, Meru', 'info@bhojon.co.ke', '0720287104', 'assets/img/icons/2023-02-21/l.png', NULL, 'assets/img/icons/2023-02-21/A.png', '9:00AM', '10:00PM', '0.00', NULL, '23457586', 0, '5.000', '20', 0, 2, '1:00 Hour', 'english', 'Africa/Nairobi', 'd/m/Y', 'LTR', 3, 'Powered By: bhojon, www.bhojon.com\r\n', '2023 bhojon©Copyright', '09:00:00', '22:00:00', 20, 2);
 
 -- --------------------------------------------------------
 
@@ -4181,7 +4181,7 @@ CREATE TABLE `synchronizer_setting` (
 --
 
 INSERT INTO `synchronizer_setting` (`id`, `hostname`, `username`, `password`, `port`, `debug`, `project_root`) VALUES
-(8, '70.35.198.244', 'softest3pronic', 'Ux5O~MBJ#odK', '21', 'true', './public_html/');
+(8, '70.35.198.244', 'softest3bhojon', 'Ux5O~MBJ#odK', '21', 'true', './public_html/');
 
 -- --------------------------------------------------------
 
@@ -4272,7 +4272,7 @@ CREATE TABLE `tblserver` (
 --
 
 INSERT INTO `tblserver` (`serverid`, `localhost_url`, `online_url`) VALUES
-(1, 'http://localhost/restaurant_v2', 'http://soft14.pronic.com/restaurant_v2');
+(1, 'http://localhost/restaurant_v2', 'http://soft14.bhojon.com/restaurant_v2');
 
 -- --------------------------------------------------------
 
@@ -5223,8 +5223,8 @@ CREATE TABLE `tbl_widget` (
 INSERT INTO `tbl_widget` (`widgetid`, `widget_name`, `widget_title`, `widget_desc`, `status`) VALUES
 (1, 'Footer left', '', '<p class=\"text-justify\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.</p>', 1),
 (2, 'footermiddle', 'Available On', '<p><strong>Monday - Wednesday</strong> 10:00 AM - 7:00 PM</p>\r\n<p><strong>Thursday - Friday</strong> 10:00 AM - 11:00 PM</p>\r\n<p><strong>Saturday</strong> 12:00 PM - 6:00 PM</p>\r\n<p><strong>Sunday</strong> Off</p>', 1),
-(3, 'Footer right', 'Contact Us', '<p>356, Mannan Plaza ( 4th Floar ) Khilkhet Dhaka</p>\r\n<p><a href=\"../../hungry\">support@pronic.com</a></p>\r\n<p><a href=\"../../hungry\">+88 01715 222 333</a></p>', 1),
-(4, 'Our Store', 'Our Store', '<address>123 Suspendis matti,&nbsp;<br />Visaosang Building VST District,&nbsp;<br />NY Accums, North American</address>\r\n<p><a class=\"d-block\" href=\"http://soft9.pronic.com/hungry-v1/\">0123-456-78910</a><a class=\"d-block\" href=\"http://soft9.pronic.com/hungry-v1/\">support@domain.com</a></p>', 1),
+(3, 'Footer right', 'Contact Us', '<p>356, Mannan Plaza ( 4th Floar ) Khilkhet Dhaka</p>\r\n<p><a href=\"../../hungry\">support@bhojon.com</a></p>\r\n<p><a href=\"../../hungry\">+88 01715 222 333</a></p>', 1),
+(4, 'Our Store', 'Our Store', '<address>123 Suspendis matti,&nbsp;<br />Visaosang Building VST District,&nbsp;<br />NY Accums, North American</address>\r\n<p><a class=\"d-block\" href=\"http://soft9.bhojon.com/hungry-v1/\">0123-456-78910</a><a class=\"d-block\" href=\"http://soft9.bhojon.com/hungry-v1/\">support@domain.com</a></p>', 1),
 (6, 'Reservation', 'BOOK YOUR TABLE', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>', 1),
 (7, 'Our Menu text', 'Our Menu ', '<p>Rosa is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon\'s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London inteon.</p>', 1),
 (8, 'Specials', 'FOOD MENU', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The</p>', 1),
@@ -5232,7 +5232,7 @@ INSERT INTO `tbl_widget` (`widgetid`, `widget_name`, `widget_title`, `widget_des
 (10, 'Professional', 'OUR EXPERT CHEFS', '', 1),
 (11, 'Need Help Booking?', 'Need Help Booking?', '<p class=\"mb-2\">Just call our customer services at any time, we are waiting 24 hours to recieve your calls.</p>\r\n<p><a href=\"#\">+880 1712 123 123</a></p>', 1),
 (12, 'Privacy', 'Privacy Policy', '<h2>What is Lorem Ipsum</h2>\r\n<p>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n<h3>Contacting us :</h3>\r\n<p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us.</p>', 1),
-(13, 'termscondition', 'Terms of Use', '<h3>Web browser cookies</h3>\r\n<p>Our Site may use cacheÃƒâ€šÃ‚Â and \"cookies\" to enhance User experience. User\'s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</p>\r\n<h3>How we use collected information pronic may collect and use Users personal information for the following purposes:</h3>\r\n<p>To run and operate our Site We may need your information display content on the Site correctly. To improve customer service Information you provide helps us respond to your customer service requests and support needs more efficiently. To personalize user experience We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site. To improve our Site We may use feedback you provide to improve our products and services. To run a promotion, contest, survey or other Site feature To send Users information they agreed to receive about topics we think will be of interest to them. To send periodic emails We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests.</p>', 1),
+(13, 'termscondition', 'Terms of Use', '<h3>Web browser cookies</h3>\r\n<p>Our Site may use cacheÃƒâ€šÃ‚Â and \"cookies\" to enhance User experience. User\'s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</p>\r\n<h3>How we use collected information bhojon may collect and use Users personal information for the following purposes:</h3>\r\n<p>To run and operate our Site We may need your information display content on the Site correctly. To improve customer service Information you provide helps us respond to your customer service requests and support needs more efficiently. To personalize user experience We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site. To improve our Site We may use feedback you provide to improve our products and services. To run a promotion, contest, survey or other Site feature To send Users information they agreed to receive about topics we think will be of interest to them. To send periodic emails We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests.</p>', 1),
 (14, 'map', 'Google Map', '<p>&lt;iframe style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14599.578237069936!2d90.3654215!3d23.8223482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1583411739085!5m2!1sen!2sbd\" width=\"300\" height=\"150\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"&gt;&lt;/iframe&gt;</p>', 1),
 (15, 'carousal1', 'carousal', '<p>show</p>', 1),
 (16, 'TASTY MENU TODAY', 'CHEF SELECTION', '', 1),
@@ -5372,7 +5372,7 @@ INSERT INTO `user` (`id`, `firstname`, `lastname`, `about`, `waiter_kitchenToken
 (166, 'Ainal', 'Haque', NULL, NULL, 'ainal@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, '2020-12-17 12:30:42', '2020-12-17 12:30:31', '::1', NULL, 1, 0),
 (168, 'Manik ', 'Hassan', NULL, NULL, 'manik@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
 (177, 'Di', 'Maria', NULL, NULL, 'dimaria@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
-(178, 'Nicks', 'Silver', 'Software Engineer', NULL, 'info@pronic.co.ke', 'e0861b7007fca64937aa14d7617b904e', NULL, './assets/img/user/Asset_51.png', '2023-04-27 13:22:56', NULL, '::1', NULL, 1, 1);
+(178, 'Nicks', 'Silver', 'Software Engineer', NULL, 'info@bhojon.co.ke', 'e0861b7007fca64937aa14d7617b904e', NULL, './assets/img/user/Asset_51.png', '2023-04-27 13:22:56', NULL, '::1', NULL, 1, 1);
 
 -- --------------------------------------------------------
 

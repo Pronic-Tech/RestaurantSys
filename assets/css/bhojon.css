@@ -33,7 +33,7 @@
 }
 
 .login-wrapper {
-    background: url(../img/bhojon/login-bg.jpg) no-repeat;
+    background: url(../img/pronic/login-bg.jpg) no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     position: relative;
@@ -85,7 +85,7 @@
     border-color: #fff;
 }
 
-/*Bhojon List*/
+/*pronic List*/
 
 .invoice-card {
     display: flex;
@@ -222,7 +222,7 @@
     transition-duration: 0.4s;
 }
 
-.bhojon_title {
+.pronic_title {
     margin-top: 6px;
     margin-bottom: 6px;
     font-size: 14px;
@@ -254,8 +254,8 @@
     background-color: #383838;
 }
 
-.food_item:focus .bhojon_title,
-.food_item:hover .bhojon_title {
+.food_item:focus .pronic_title,
+.food_item:hover .pronic_title {
     color: #fff;
 }
 

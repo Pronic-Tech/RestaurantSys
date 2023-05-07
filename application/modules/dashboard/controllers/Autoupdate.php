@@ -5,14 +5,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 @ini_set("allow_url_fopen", 1);
 
 //Get Update file
-define('MIN_VERSION', file_get_contents('https://update.pronic.com/bhojon/autoupdate/update_min_version'));
+define('MIN_VERSION', file_get_contents('https://update.bhojon.com/bhojon/autoupdate/update_min_version'));
 //Get Update file
-define('MAX_VERSION', file_get_contents('https://update.pronic.com/bhojon/autoupdate/update_max_version'));
+define('MAX_VERSION', file_get_contents('https://update.bhojon.com/bhojon/autoupdate/update_max_version'));
 
 //Get Update file
-define('UPDATE_URL','https://update.pronic.com/bhojon/autoupdate');
+define('UPDATE_URL','https://update.bhojon.com/bhojon/autoupdate');
 // Get latest version info
-define('UPDATE_INFO_URL','https://update.pronic.com/bhojon/autoupdate/update_info');
+define('UPDATE_INFO_URL','https://update.bhojon.com/bhojon/autoupdate/update_info');
 // CRM temporary path
 define('TEMP_FOLDER', FCPATH .'temp' . '/');
 

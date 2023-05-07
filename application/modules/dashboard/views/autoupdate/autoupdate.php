@@ -55,7 +55,7 @@
                                 <?php } ?>
                                
                               </select>
-                              <p><a href="https://forum.pronic.com" target="_blank">Do you Need support?</a> </p>
+                              <p><a href="https://forum.bhojon.com" target="_blank">Do you Need support?</a> </p>
                         </div>
                     </div> 
                     <div>

@@ -71,7 +71,7 @@ body
     margin-bottom: 10px;
 }
 .login-wrapper {
-    background: url(../img/bhojon/login-bg.jpg) no-repeat;
+    background: url(../img/pronic/login-bg.jpg) no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     position: relative;
@@ -123,7 +123,7 @@ body
     border-color: #fff;
 }
 
-/*Bhojon List*/
+/*pronic List*/
 
 .invoice-card {
     display: flex;

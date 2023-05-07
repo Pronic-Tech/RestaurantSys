@@ -31,7 +31,7 @@
             position: new google.maps.LatLng(23.756107, 90.387196), 
             map: map,
             icon: catIcon,
-            title: 'pronic',
+            title: 'bhojon',
             animation: google.maps.Animation.DROP,
         });
     }
