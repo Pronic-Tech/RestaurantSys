@@ -16,8 +16,8 @@
                 <div class="form-control alert alert-success"><?php echo $this->session->flashdata('success'); ?></div>
             <?php endif; ?>
             <h3>You can export test.csv file Example-<a  class="btn btn-primary btn-md" href="<?php echo base_url() ?>itemmanage/item_food/downloadformat"><i class="fa fa-download" aria-hidden="true"></i>Download CSV Format</a></h3>
-            <h4>Category,kitchen,Food Name,Description,status,VarientName,Price,Quantiy</h4>
-            <h4>Demo,Kenyan,Dosa,Delicious Food,Active,Small,60</h4>
+            <h4>Category,kitchen,Food Name,Description,status,VarientName,Price</h4>
+            <h4>Demo,Italian,Dosa,Delicious Food,Active,Small,60</h4>
             <h2><?php echo display('upload_food_csv')?></h2>               
                        <?php echo form_open_multipart('itemmanage/item_food/bulkfoodupload',array('class' => 'form-vertical', 'id' => 'validate','name' => 'insert_attendance'))?>
                     <input type="file" name="userfile" id="userfile" ><br><br>
@@ -121,9 +121,6 @@
                     </div>
                     </div>
                     <div class="col-lg-6">
-                  
-                   
-                    
                     <div class="form-group row">
                         <label for="vat" class="col-sm-5 col-form-label"><?php echo display('vat') ?> <a class="cattooltips" data-toggle="tooltip" data-placement="top" title="Vat Are always Caltulate percent like: 5 means 5%;"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
                         <div class="col-sm-7">

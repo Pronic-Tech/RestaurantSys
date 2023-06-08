@@ -71,7 +71,7 @@ body
     margin-bottom: 10px;
 }
 .login-wrapper {
-    background: url(../img/pronic/login-bg.jpg) no-repeat;
+    background: url(../img/bhojon/login-bg.jpg) no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     position: relative;
@@ -123,7 +123,7 @@ body
     border-color: #fff;
 }
 
-/*pronic List*/
+/*Bhojon List*/
 
 .invoice-card {
     display: flex;
@@ -662,7 +662,7 @@ body
                 </div>
       <div class="text-center">
         <h3 class="my-5"><?php echo display('thanks_you')?></h3>
-        <p class="b_top"><?php echo display('powerbypronic')?></p>
+        <p class="b_top"><?php echo display('powerbybdtask')?></p>
       </div>
     </div>
   </div>

@@ -1,4 +1,9 @@
 # Change Log
+## Version 2.21.0 (2023-05-01)
+
+## New feature: Create Quanty and Buying Price for variants
+
+
 
 ## Version 2.20190213.0 (2019-02-13)
 

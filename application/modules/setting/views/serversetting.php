@@ -17,9 +17,9 @@
                  </div>
                   <div class="col-md-5 serversetting-cusotomer-app">
                   <p class="app-playstore"><?php echo display('download_apps_playstore')?></p>
-                  <p><a href="https://play.google.com/store/apps/details?id=com.bhojon.kitchenchef" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('kitchen_app')?></a></p>
-                  <p><a href="https://play.google.com/store/apps/details?id=com.bhojon.waiters" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('waiter_app')?></a></p>
-                  <p><a href="https://play.google.com/store/apps/details?id=com.bhojon.hungry" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('customer_app')?></a></p>
+                  <p><a href="https://play.google.com/store/apps/details?id=com.bdtask.kitchenchef" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('kitchen_app')?></a></p>
+                  <p><a href="https://play.google.com/store/apps/details?id=com.bdtask.waiters" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('waiter_app')?></a></p>
+                  <p><a href="https://play.google.com/store/apps/details?id=com.bdtask.hungry" target="_blank"><img src="<?php echo base_url(); ?>assets/img/appsicon.png" alt="apps" width="50px;"/> <?php echo display('customer_app')?></a></p>
                   </div>
                 
              </div>
@@ -56,8 +56,8 @@
                     </div>
                 <?php echo form_close() ?>
                 <p>*** <?php echo display('if_you_need_the_above_all_apps')?><br />
-               Email:business@bhojon.com <br />
-               Skype:bhojon
+               Email:business@bdtask.com <br />
+               Skype:bdtask
                 </p>
             </div>
         </div>
